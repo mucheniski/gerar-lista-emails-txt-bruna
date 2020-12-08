@@ -1,0 +1,38 @@
+{
+	"info": {
+		"_postman_id": "af14eb13-2cc4-48e8-8532-38bb37cbbec4",
+		"name": "pessoas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "gerar-arquivo-emails",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"nome\": \"diego\",\n        \"email\": \"diego@teste.com\"\n    },\n    {\n        \"nome\": \"bruna\",\n        \"email\": \"bruna@teste.com\"\n    },\n    {\n        \"nome\": \"edna\",\n        \"email\": \"edna@teste.com\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/pessoas/gerar-arquivo-emails",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pessoas",
+						"gerar-arquivo-emails"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
