@@ -1,12 +1,12 @@
 {
 	"info": {
-		"_postman_id": "182d8da5-1f48-4d75-b4ed-6a2d72bc4526",
+		"_postman_id": "af14eb13-2cc4-48e8-8532-38bb37cbbec4",
 		"name": "pessoas",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "gerar-arquivo-emails por json",
+			"name": "gerar-arquivo-emails",
 			"request": {
 				"method": "POST",
 				"header": [],
@@ -20,43 +20,14 @@
 					}
 				},
 				"url": {
-					"raw": "localhost:8080/pessoas/gerar-arquivo-emails-por-json",
+					"raw": "localhost:8080/pessoas/gerar-arquivo-emails",
 					"host": [
 						"localhost"
 					],
 					"port": "8080",
 					"path": [
 						"pessoas",
-						"gerar-arquivo-emails-por-json"
-					]
-				}
-			},
-			"response": []
-		},
-		{
-			"name": "gerar-arquivo-emails-por-csv",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "arquivoCsv",
-							"type": "file",
-							"src": "/home/developer/Desktop/contatos.txt"
-						}
-					]
-				},
-				"url": {
-					"raw": "localhost:8080/pessoas/gerar-arquivo-emails-por-csv",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"pessoas",
-						"gerar-arquivo-emails-por-csv"
+						"gerar-arquivo-emails"
 					]
 				}
 			},
